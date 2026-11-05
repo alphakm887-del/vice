@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07111f" />
+    <title>PROJECT ALPHA: VICE COAST</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="loading"><div class="loader-mark">Α</div><h1>VICE COAST</h1><p>INITIALIZING CITY SYSTEMS</p><div class="load-track"><span></span></div></div>
+      <div id="hud" class="hidden">
+        <div class="topline"><div class="brand"><span class="brand-mark">Α</span><div><b>PROJECT ALPHA</b><small>VICE COAST</small></div></div><div class="district"><span class="live-dot"></span><span id="district-name">DOWNTOWN VICE</span></div><div class="cash"><small>CREDITS</small><b>$<span id="cash">2,500</span></b></div></div>
+        <div class="mission"><small>FREE ROAM</small><b id="objective">Explore Vice Coast</b><span id="hint">Find a vehicle and press E to drive</span></div>
+        <div class="bottom-left"><div class="minimap"><div class="map-grid"></div><div class="map-road r1"></div><div class="map-road r2"></div><div class="map-road r3"></div><div class="map-player">▲</div><span class="map-label">VICE COAST</span></div></div>
+        <div class="bottom-right"><div class="vehicle-panel"><div class="vehicle-type" id="vehicle-type">ON FOOT</div><div class="speed"><strong id="speed">00</strong><small>KM/H</small></div><div class="meter"><span id="speed-meter"></span></div></div><div class="controls">WASD <span>MOVE / DRIVE</span> &nbsp; E <span>ENTER / EXIT</span> &nbsp; SHIFT <span>SPRINT</span> &nbsp; C <span>CAMERA</span> &nbsp; ESC <span>PAUSE</span></div></div>
+        <div id="toast" class="toast">Welcome to Vice Coast</div>
+        <div id="pause" class="pause hidden"><div class="pause-card"><small>PROJECT ALPHA</small><h2>PAUSED</h2><p>Your city is waiting.</p><button id="resume">RESUME GAME</button><button id="reset">RESET POSITION</button></div></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
